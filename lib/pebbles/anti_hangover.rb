@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-
 require 'pebbles'
-include Pebbles
 
 class Pebbles::AntiHangover
   VERSION = '0.1.0'
