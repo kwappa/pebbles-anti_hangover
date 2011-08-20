@@ -1,6 +1,0 @@
-History.txt
-Manifest.txt
-README.txt
-Rakefile
-lib/pebbles/anti_hangover.rb
-spec/anti_hangover_spec.rb

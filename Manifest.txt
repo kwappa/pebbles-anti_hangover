@@ -3,4 +3,6 @@ Manifest.txt
 README.txt
 Rakefile
 lib/pebbles/anti_hangover.rb
+spec/spec_helper.rb
 spec/anti_hangover_spec.rb
+autotest/discover.rb
