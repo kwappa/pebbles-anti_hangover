@@ -85,9 +85,12 @@ class Pebbles::AntiHangover
       glass = ALCOHOL_TYPE[kind]
       drunk_logs += "#{glass[:name]}を#{glass[:glass]}に#{glasses}#{glass[:unit]}"
     end
+    percentage = (total_drunk.to_f / permissible_alcohol.to_f * 1000.0).floor / 10.0
     result += drunk_logs + "飲んで、\n#{@drinking_hours}時間後に起きなければなりません。\n\n"
     result += 'そのときあなたは、おそらく二日酔いに'
-    result += "#{hangover? ? 'なる' : 'ならない'}でしょう。\n" ;
+    result += "#{hangover? ? 'なる' : 'ならない'}でしょう。\n\n"
+    result += "(許容量の#{percentage}%を飲んでいます)\n"
+
     result
   end
 end
